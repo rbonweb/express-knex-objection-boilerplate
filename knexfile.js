@@ -20,7 +20,7 @@ module.exports = {
       host: '127.0.0.1',
       user: 'root',
       password: 'laragon',
-      database: 'db_name',
+      database: 'express',
     },
     migrations: {
       directory: __dirname + '/database/migrations'

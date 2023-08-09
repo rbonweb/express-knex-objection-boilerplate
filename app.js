@@ -1,4 +1,3 @@
-const path = require('path');
 const express = require("express");
 const app = express();
 const cookieParser = require('cookie-parser');
@@ -18,7 +17,7 @@ app.use('/api', require('./routes'));
 app.use(errorHandler);
 
 // start server
-const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 5000;
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 5001;
 app.listen(port, () => {
   console.log('Server listening on port ' + port);
 });
